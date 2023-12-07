@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+
+}
+
+.greeting {
+    background-color: bisque;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    font-size: 10px;
+
+}
+
+.greeting:hover {
+    background-color:lavenderblush;
+}
+
+
+
+@media screen and (max-width:900px) {
+    body {
+        background-color: coral;
+    }
+
+
+.greeting {
+    background-color:lightgreen;
+    width:200px;
+    height:200px;
+    font-size:20px;
+}
+    
+}
+@media screen and (max-width: 700px){
+
+body {
+    background-color:aqua;
+}
+
+.greeting {
+    background-color:indianred;
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+}
+
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background-color:lightpink;
+    }
+.greeting {
+    background-color:brown;
+    width:400px;
+    height: 400px;
+    font-size: 40px;
+
+}
+}
+

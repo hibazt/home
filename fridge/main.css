@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif;
+    background-color:rgb(196, 228, 137);
+    color:#fff;
+}
+.fridge{
+    position: relative;
+    width:180px;
+    margin:100px auto 10px;
+    height: auto;
+    border:4px solid rgb(196, 228, 137);
+    background:rgb(196, 228, 137);
+    display:block;
+}
+.fridge:before, .fridge:after {
+    position: absolute;
+    content: '';
+    width:8px;
+    height:0;
+    bottom:-8px;
+    border:4px solid transparent;
+    border-top-color: #ffc8c8;
+    border-bottom-width:0;
+}
+.fridge:before{
+    left:14px;
+}
+.fridge:after{
+    right:14px;
+    box-shadow:0 -405px 0 1px #594848;
+}
+.fridge .freezer, .fridge .body{
+    position: relative;
+    background:#422727;
+    background-image: linear-gradient(to right, #f76363 25%, #e22d2d 15%);
+    transform-origin:right;
+    transition:all 0.5s ease-in-out;
+}
+/* .fridge .freezer:before, .fridge .body:before, .fridge .freezer:after, */
+.fridge .body:after{
+    position:absolute;
+    content: '';
+    top:7px;
+    right:10px;
+    width:5px;
+    height:45px;
+    border-radius:5px;
+    background:#f0b1b1;
+    transition:all 0.5s ease-in-out;
+}
+.fridge .freezer {
+    height:95px;
+    border-bottom:4px solid #ffc5c5;
+}
+.fridge .freezer .handle{
+    top:20px;
+}
+.fridge .body {
+    height:300px;
+}
+.fridge .body:before{
+    top:62px;
+    height:auto;
+    bottom:170px;
+}
+.handle {
+    position: absolute;
+    top:0;
+    bottom:15px;
+    left:15px;
+    width:5px;
+    border:3px solid #646262;
+    border-radius:5px;
+    background:#fecccc;
+    box-sizing:content-box;
+    transition:all 0.5s ease-in-out;
+}
+
+/* }
+.open-door{
+    transform:perspective(1200px) translateZ(0px) traslateX(0px) translateY(0px)
+} */
+/* #food{
+    position: absolute;
+    z-index:0;
+    padding:10px;
+    height:375px;
+    overflow: hidden;
+}
+#food img{
+    max-width:60px;
+    max-height:35px;
+}
+.shelf{
+    position: absolute;
+    width:172px;
+    z-index: 0;
+    border-bottom: 10px solid #7b7373;
+    border-left: 5px sold transparent;
+    border-right: 35px;
+} */
+/* .shelf:after{
+    content: '';
+    background:#ffc8c8;
+    height:5px;
+    width:172px;
+    position:absolute;
+    top:10px;
+    left:15px;
+    right:0;
+    margin:0 -20px; */
+
+/* }
+.shelf:nth-child(2){
+    top:70px;
+}
+.shelf:nth-child(3){
+    top:130px;
+}
+.shelf:nth-child(4){
+    top:70px;
+}
+.shelf:nth-child(5){
+    top:210px;
+}
+.shelf:nth-child(6){
+    top:250px;
+}
+.shelf:nth-child(7){
+    top:290px;
+}
+.shelf:nth-child(8){
+    top:330px;
+}
+.shelf:nth-child(9){
+    top:370px;
+} */
+#lemon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    left: 98px;
+    top: -200px;
+
+}
+#cherry {
+    position: relative;
+    background-color: #e22d2d;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    left: -50px;
+    top: -120px;
+}
+#icecream {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    left: 10px;
+    top: -140px;
+}
+#beet {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    left: 50px;
+    top: 75px;
+}

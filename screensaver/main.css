@@ -1,0 +1,130 @@
+body {
+    background-color: #051728;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    animation: sky 7.5s 3s forwards reverse;
+    border: 380px #ffd76a;
+  }
+
+  @keyframes sky{
+    50%{
+        background-color:#ffd700;
+    }
+    65%{
+        background-color:#ffb90f;
+    }
+    85%{
+        background-color:#0077b3;
+        
+    }
+    100%{
+        background-color:#2a5086;
+    }
+  }
+  .container {
+    height: 530px;
+    width: 350px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .kitty {
+    background-color: #2d2623;
+    height: 140px;
+    width: 50px;
+    position: absolute;
+    bottom: -55px;
+    left: 200px;
+    border-radius: 40px 40px 0 0;
+    
+  }
+  .kitty:before {
+    content: "";
+    position: absolute;
+    background-color: #2d2623;
+    height: 80px;
+    width: 40px;
+    border-radius: 0 80px 80px 0;
+    bottom: 0;
+    left: 43px;
+  }
+  .kitty:after {
+    content: "";
+    position: absolute;
+    background-color: #2d2623;
+    height: 80px;
+    width: 10px;
+    border-radius: 5px;
+    bottom: -70px;
+    left: 45px;
+    transform: rotate(-15deg);
+    transform-origin: top;
+    animation: tail 3.5s infinite;
+  }
+  @keyframes tail {
+    50% {
+      transform: rotate(10deg);
+    }
+  }
+  .ear {
+    height: 0;
+    width: 0;
+    border-bottom: 40px solid #2d2623;
+    border-right: 33px solid transparent;
+    position: relative;
+    bottom: 12px;
+  }
+  .ear:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-bottom: 40px solid #2d2623;
+    border-left: 33px solid transparent;
+    bottom: -40px;
+    left: 17px;
+  }
+  .moon {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: -15px 8px 0 1px #fecf7f;
+    position: relative;
+    left: 250px;
+    top: 60px;
+    
+    animation:sunset 15s forwards;
+    animation: sunset 15s reverse;
+    animation-delay: 4s;
+
+  }
+    @keyframes sunset{
+        100%{
+            transform: translateY(750px);
+        }
+    }
+
+  .star {
+    background-color: #ffd76a;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 160px;
+    box-shadow: 80px 65px #eecf96, -120px 150px #eec681, -80px 280px #e0bb7c,
+      70px 235px #d9bb61, 40px 135px #dddd4a, 90px 95px #fde9c1, 100px 200px #f1f3c4 ;
+    animation: twinkle 1s infinite;
+  }
+  @keyframes twinkle {
+    55% {
+      opacity: 0.4;
+    }
+}
+

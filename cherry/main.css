@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #ff9393
+    
+
+}
+.circle {
+    
+    background: #c13535;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    
+  }
+.container{
+    margin:100px auto;
+    width: 40%
+}
+.wrapper{
+    margin:100px auto;
+    width:30%
+}
+
+img{
+    max-width: 500px;
+    float: left;
+    margin-right:10px;
+}

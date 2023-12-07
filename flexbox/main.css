@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: gray;
+    padding:10px;
+    height: 400px;
+
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+
+    gap: 20px 40px;
+}
+
+.item {
+    background-color: crimson;
+    border:1px solid;
+
+    width: 300px;
+    height: 100px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.special {
+    background-color: darkorange;
+    order:-1;
+}
