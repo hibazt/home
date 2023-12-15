@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Cosmetics Shop</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        #modal {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 0.3em 0;
+            overflow: hidden;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+
+        .checkout-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .checkout-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Quantum Beauty&Skin</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="checkout-container">
+        <h2>Checkout</h2>
+        <form class="checkout-form" id="checkoutForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="card">Credit Card:</label>
+                <input type="text" id="card" name="card" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+            </div>
+
+            <button type="button" onclick="showModal()">Place Order</button>
+        </form>
+    </div>
+
+    <div id="overlay">
+        <div id="modal">
+            <p>Dear Valued Customer,
+
+                Before embarking on your journey with our revolutionary cosmetic augmentation products, it is crucial to be aware of potential risks, including the development of addictive behaviors related to body modifications. While these products are purely conceptual and designed for entertainment purposes, it is essential to explore the speculative consequences that may arise from their use.
+                
+                1. Intensified Aesthetic Desires:
+                The cosmetic augmentation products may intensify your desire for aesthetic enhancements, potentially leading to a continuous cycle of modifications. Users may find themselves increasingly drawn to the allure of additional alterations in the pursuit of an ever-evolving idealized appearance.
+                
+                2. Psychological Gratification Loop:
+                The transformative nature of these cosmetic products may trigger a psychological gratification loop, where users derive immense pleasure from each alteration. This positive reinforcement may inadvertently fuel a desire for more modifications, creating a potentially addictive pattern of seeking constant enhancement.
+                
+                3. Social Influences and Peer Pressure:
+                The widespread use of cosmetic augmentation products could contribute to societal norms emphasizing enhanced appearances. Users may feel pressure to conform to these standards, fostering a sense of competitiveness and an incessant drive for further modifications to stay in line with evolving beauty ideals.
+                
+                4. Escalating Tolerance Levels:
+                As users experience the initial thrill of cosmetic enhancements, they may develop a tolerance to their current appearance, requiring more drastic alterations to achieve the same level of satisfaction. This escalating tolerance may contribute to a cycle of increasing modifications and a persistent quest for the next level of aesthetic perfection.
+                
+                5. Emotional Dependency:
+                Users may develop emotional dependencies on the positive feelings associated with their transformed appearance. This emotional reliance may drive individuals to seek continual modifications as a means of sustaining or heightening these positive emotional states.
+                
+                6. Financial Implications:
+                The pursuit of continuous cosmetic modifications may result in significant financial commitments. Users should be aware that an addictive drive for enhancements could lead to substantial ongoing expenses related to product purchases, consultations, and follow-up procedures.
+                
+                7. Impact on Mental Well-being:
+                Excessive reliance on cosmetic alterations may impact users' mental well-being, potentially contributing to anxiety, self-esteem issues, and dissatisfaction with one's unaltered self. It is crucial to strike a balance between aesthetic aspirations and maintaining a healthy self-perception.
+                
+                8. Counseling and Support:
+                Users who find themselves entangled in a cycle of addictive behaviors related to cosmetic modifications are encouraged to seek support from counseling services. These services, though not real, symbolize the importance of addressing potential psychological implications and seeking assistance when needed.
+                
+                In conclusion, while the use of cosmetic augmentation products is purely speculative and intended for entertainment, it is essential to consider the hypothetical risks outlined in this disclaimer. Users are urged to approach cosmetic enhancements responsibly, maintaining a healthy perspective on self-image and recognizing the potential for addictive behaviors.</p>
+            <button onclick="hideModal()">Close</button>
+        </div>
+    </div>
+    <script>
+        function showModal() {
+            document.getElementById('overlay').style.display = 'flex';
+        }
+
+        function hideModal() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+</script>
+
+
+
+</body>
+</html>
+
+
