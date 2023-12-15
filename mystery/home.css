@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 5;
+    box-sizing: border-box;
+    font-family: "caveat", 'Courier New', Courier, monospace;
+    /* cursor: none; */
+    background-color: rgb(163, 27, 24);
+
+
+}
+h1
+{
+    color: rgb(255, 255, 255);
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}

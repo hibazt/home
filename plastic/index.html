@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Beauty&Skin</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(231, 231, 231);
+        }
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 60px;
+            text-align: center;
+            animation: fadeIn 5s ease-in-out;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 0.3em 0;
+            overflow: hidden;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+
+        .marquee-text {
+            white-space: nowrap; 
+            overflow: hidden;
+        }
+
+        .marquee-text marquee {
+            display: inline-block;
+            animation: marqueeAnimation 17s linear infinite;
+        }
+
+        @keyframes marqueeAnimation {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .welcome {
+            background: center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 100px;
+            animation: fadeIn 20s ease-in-out;
+        }
+
+        .welcome h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px #333;
+            
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        section {
+            padding: 20px;
+            
+        }
+
+        .about {
+            background-color: #fff;
+            /* width:900px; */
+            align-self: center;
+            border-radius: 5px;
+            /* box-shadow: 0 0 10px #444; */
+            overflow: hidden;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-content {
+            width: 900px;
+            text-align: justify;
+            
+            
+        }
+    
+
+        /* .container {
+            display:flex;
+            flex-direction: row; */
+          
+            
+            
+        /* } */
+
+        .container1 {
+            display:flex;
+            flex-direction: row;
+            /* background-color: #fff; */
+            width: 640px;
+            /* border-radius: 5px; */
+            /* box-shadow: 0 0 10px #444; */
+            overflow: hidden;
+            margin: 30px;
+            padding: 20px;
+            text-align: right;
+        }
+        .container-info1{
+           
+            /* background-color: #fff; */
+            width: 540px;
+            /* border-radius: 5px; */
+            /* box-shadow: 0 0 10px #444; */
+            overflow: hidden;
+            margin: 30px;
+            padding: 20px;
+            text-align: right;
+          
+        }
+
+        .contact {
+
+            background-color: #fff;
+        
+            /* border-radius: 5px; */
+            box-shadow: 0 0 10px #444;
+            overflow: hidden;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .cost {
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: #fff;
+            /* border-radius: 5px; */
+            /* box-shadow: 0 0 10px #444; */
+            overflow: hidden;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+    
+        }
+
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="bgVideo">
+            <source src="pills.mp4" type="video/mp4">
+        </video>
+       
+    <header>
+        <h1>QB&S</a></h1>
+    </header>
+
+    <nav>
+        <div class="marquee-text">
+            <marquee behavior="scroll" direction="left">LIMITED TIME OFFER   BUY 1 GET 50% OFF YOUR NEXT ORDER!!!</marquee>
+        </div>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <style>
+        div.welcome h1 {
+          width:100%;
+          overflow:hidden;
+        }
+        div.welcome h1 {
+          animation: 25s slide-down;
+          margin-top:0%;
+        }
+        
+        @keyframes slide-down {
+          from {
+            margin-top: -10%;
+            height: 300%; 
+           
+          }
+        
+          to {
+            margin-top: 0%;
+            height: 100%;
+            
+          }
+        }
+        </style>
+        
+        <div class="welcome h1" id="home">
+        <h1>Welcom to Quantum Beauty&Skin</h1>
+        <p>Discover the latest trends in beauty and find the perfect products for your makeup routine.</p>
+        </div>
+        
+
+    <!-- <div class="welcome" id="home">
+        
+        <h1>Welcome to Quantum Beauty&Skin</h1>
+        <p>Discover the latest trends in beauty and find the perfect products for your makeup routine.</p>
+    </div> -->
+
+    <section>
+        <!-- <div class="container"> -->
+        <div class="about">
+            
+      
+            <div class="product-info" id="about">
+            <h2>About Us</h2>
+            <p>Enhancing your beauty with Science.</p>
+           
+            <center>
+            <p class="about-content">Welcome to Quantum Beauty & Skin, the avant-garde frontier where cutting-edge science converges with the limitless potential of self-transformation. In our realm, beauty is not just redefined; it's propelled into a new dimension, guided by the precision of quantum advancements. In a world where beauty is not a subjective ideal but an objective pursuit, where the canvas of the human body is a masterpiece awaiting the brushstrokes of perfection.</p>
+
+            <p class="about-content">Quantum Beauty & Skin stands as a testament to the fusion of scientific ingenuity and aesthetic mastery. We are at the forefront of cutting-edge cosmetic innovations, spearheading a paradigm shift in self-improvement. Our team of quantum physicists, genetic engineers, and medical experts are united by a singular mission: to unveil the quantum secrets of beauty and empower individuals to sculpt their ideal selves. Our relentless commitment to pioneering research has ushered in a future where self-enhancement is not only achievable but an everyday norm. Say farewell to the constraints of genetic lottery; with our revolutionary products, you can sculpt, shape, and redefine your physical presence effortlessly.</p>
+            <p class="about-content">Our team of esteemed scientists and medical experts has dedicated years to unraveling the mysteries of human aesthetics.Our proprietary quantum-infused pills transcend the conventional boundaries of cosmetic enhancement. Each meticulously crafted formula is a symphony of quantum particles, seamlessly integrating with your genetic code to unlock the beauty that lies within. From harmonizing facial features to sculpting the perfect curves, Quantum Beauty & Skin empowers you to navigate the quantum realm of aesthetic perfection. Our commitment to accessibility has led us to introduce on-the-go solutions, such as our exclusive suture kits, enabling you to perform minor enhancements anytime, anywhere. With Quantum, you are no longer bound by the constraints of scheduled appointments or the scrutiny of societal norms. Unleash your true potential with the ease and convenience that our products provide.</p>
+            <h3>Our Mission</h3>
+            <p class="about-content">Quantum Beauty & Skin envisions a world where beauty is not confined by the limits of nature but is a dynamic and ever-evolving expression of the self. We invite you to embark on a journey where the laws of quantum physics intersect with the canvas of your physical being, transforming beauty into an art form that transcends the ordinary. </p>
+            <p class="about-content">In a society that has seamlessly embraced the quantum shift in self-perception, Quantum Beauty & Skin emerges as the beacon of a new era. We embrace the cold and eerie beauty of a world where perfection is not just a pursuit but an intricate dance between science and art. At Quantum Beauty & Skin, we celebrate the quantum potential within, unlocking the extraordinary in the most extraordinary of ways.</p>
+            <p class="about-content">Welcome to Quantum Beauty & Skin, where beauty meets the quantum frontier, and your transformation is governed by the laws of infinite possibilities. Your journey awaits where beauty knows no bounds, and your transformation is limited only by your imagination.</p>
+        </center>
+        
+            
+        </div>
+        </div>
+        
+        <div class="container">
+        <div class="cost" id="cost">
+            
+            <!-- <img src="suturekit.png" alt="kit"/> -->
+            <div class="cost">
+                <center>
+            <h2>Beauty SK</h2>
+            <p>Enhance your beauty with Science.</p>
+            <p>$85.99</p>
+            <a href="../plastic/out.html">
+                <button>Add to Cart</button>
+                </a>
+            </center>
+            
+               
+            </div>
+        </div>
+
+        <div class="container1">
+            <img src="" alt="">
+            <div class="container-info1">
+            <h2>Q B&S Suture-Kit</h2>
+            <p>
+                The Quantum Beauty & Skin Suture Kit represents a revolutionary stride in the realm of on-the-go cosmetic enhancements. Meticulously crafted with precision and innovation, our Suture Kit empowers individuals to perform minor aesthetic enhancements in the convenience of their own space. Engineered with cutting-edge technology, the kit seamlessly blends advanced medical expertise with user-friendly application, allowing for quick and efficient lip injections whenever and wherever desired. This portable solution embodies our commitment to accessibility, enabling users to sculpt their ideal aesthetic with ease. Embrace the future of beauty with the Quantum Beauty & Skin Suture Kit—a discreet yet powerful tool that harmonizes convenience and self-expression in the pursuit of individualized perfection.</p>
+           
+           
+        </div>
+        </div>
+        </div>
+
+        <div class="container">
+            <div class="cost" id="cost">
+                
+                <img src="Screen Shot 2023-12-06 at 5.30.52 PM.png"alt="pills">
+                <div class="cost">
+                    <center>
+                <h2>Quantum Supplements</h2>
+                <p>Enhance your beauty with Science.</p>
+                <p>$59.99</p>
+                <a href="../plastic/out.html">
+                    <button>Add to Cart</button>
+                    </a>
+                </center>
+                
+                   
+                </div>
+            </div>
+    
+            <div class="container">
+                <img src="" alt="">
+                <div class="product-info">
+                <h2>Q B&S Suplements</h2>
+                <p>Discover the Quantum Beauty & Skin Pills, a groundbreaking advancement in beauty science that transcends traditional cosmetic boundaries. Our proprietary pill formulations represent the epitome of genetic engineering, seamlessly integrating with your DNA to unlock the latent potential within. Crafted by a team of esteemed scientists and medical experts, these pills redefine the landscape of self-enhancement. From facial features to sculpted curves, the Quantum Beauty & Skin Pills empower you to sculpt and refine your physical appearance effortlessly. These pills embody a symphony of quantum particles, guiding you towards the realization of your ideal self. Embrace a new era of beauty where self-transformation is not just achievable but an everyday reality with the Quantum Beauty & Skin Pills..</p>
+              
+            </div>
+            </div>
+            </div>
+
+            <div class="container">
+                <div class="cost" id="cost">
+                    
+                    <!-- <img src="suturekit.png" alt="pills"> -->
+                    <div class="cost">
+                        <center>
+                    <h2>Lip Kit</h2>
+                    <p>Enhance your beauty with Science.</p>
+                    <p>$45.99</p>
+                    <a href="../plastic/out.html">
+                    <button>Add to Cart</button>
+                    </a>
+                    </center>
+                    
+                       
+                    </div>
+                </div>
+        
+                <div class="container">
+                    <img src="" alt="">
+                    <div class="product-info">
+                    <h2>Q B&S Lip-Kit</h2>
+                    <p>Embark on a paradigm shift in lip enhancement with the Quantum Beauty & Skin Lip Kit—an innovative solution designed for on-the-go, non-invasive plumping. Eliminating the need for traditional doctor appointments and consultations, this cutting-edge kit empowers users to sculpt and enhance their lips at their convenience. Utilizing advanced injection technology, the Lip Kit merges science and cosmetic artistry seamlessly. Say farewell to cumbersome appointments and welcome a new era where plumping your lips is as effortless as it is transformative. This portable solution transcends conventional boundaries, providing a luxurious and streamlined approach to achieving the perfect pout. Experience the fusion of science, convenience, and beauty with the Quantum Beauty & Skin Lip Kit—a cosmetic indulgence that puts the power of lip enhancement firmly in your hands.
+
+
+
+
+
+
+
+
+
+                    </p>
+                 
+                </div>
+                </div>
+                </div>
+
+        <div class="contact" id="contact">
+            <h2> Contact</h2>
+        </div>
+
+        <div class="text-overlay">
+            <p>Quantum Beauty & Skin</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div>
+            <h2>Quantum Beauty & Skin - Redefining Beauty in the Quantum Realm</h2>
+            
+            
+            <div>
+                <p>🌐 Visit our Quantum Beauty & Skin Laboratories</p>
+                <p>📧 Email: "mailto:info@quantumbeautyandskin</p>
+                <p>📞 Phone: (021)-123-5432</p>
+            </div>
+            
+        
+              
+            </div>
+            <br>
+        
+            <p>© 2023 Quantum Beauty & Skin. All Rights Reserved. Embrace the Quantum Revolution.</p>
+        </div>
+    </footer>
+
+
+</div>
+</body>
+</html>
+

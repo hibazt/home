@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Story</title>
+    <title>Mystery Stories</title>
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Stylesheet-->
+  <link rel="stylesheet" href="../home.css" />
+</head>
+    <style>
+        body {
+            background-color: black;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #flashlight {
+            width: 100px;
+            height: 100px;
+            background-color: #f1c40f;
+            border-radius: 50%;
+            position: absolute;
+            cursor: move;
+        }
+        
+        #light-beam {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.7) 50%);
+        }
+        
+        #objects {
+            position: absolute;
+        }
+        
+        .hidden-object {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            border-radius: 50%;
+            position: absolute;
+            display: none;
+        }
+        
+        #flashlight-toggle {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #f1c40f;
+            color: black;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        
+        
+        }
+    </style>
+</head>
+<title>Mystery Story</title>
+<body>
+    <div id="flashlight"></div>
+    <div id="light-beam"></div>
+    <div id="objects"></div>
+    <button id="flashlight-toggle">Turn On/Off</button>
+    <script>
+        const flashlight = document.getElementById("flashlight");
+        const lightBeam = document.getElementById("light-beam");
+        const objectsContainer = document.getElementById("objects");
+        const flashlightToggle = document.getElementById("flashlight-toggle");
+        let flashlightOn = false;
+
+
+        flashlight.addEventListener("mousedown", (e) => {
+            const offsetX = e.clientX - flashlight.getBoundingClientRect().left;
+            const offsetY = e.clientY - flashlight.getBoundingClientRect().top;
+
+            document.onmousemove = (e) => {
+                flashlight.style.left = e.clientX - offsetX + "px";
+                flashlight.style.top = e.clientY - offsetY + "px";
+                if (flashlightOn) {
+                    lightBeam.style.backgroundPosition = e.clientX + "px " + e.clientY + "px";
+                }
+            };
+
+            document.onmouseup = () => {
+                document.onmousemove = null;
+                document.onmouseup = null;
+            };
+        });
+    </script>
+     <center>
+        <h1>Hidden Files</h1>
+        <h2>Lost stories</h2>
+    
+        
+    </head>
+    
+    <body>
+    <div class="container">
+        <img src="../mystery/file-folder_1f4c1-removebg-preview.png">
+        <div class="centered"><a href="../mystery/first.html">Marriage and Revenge</a></div>
+     
+        
+    </div>
+        
+    
+    
+        </center>
+</body>
+</html>
