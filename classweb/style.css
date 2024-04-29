@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#cursor{
+    height: 150px;
+    width: 150px;
+    background-color: orange;
+    border-radius: 50%;
+    position:fixed;
+    transform: scale(0);
+}
+#main {
+    /* background-color: #000; */
+    position: relative;
+    z-index: 10;
+}
+
+#page1{
+    height: min-100vh;
+    position: relative;
+    width:100%;
+    padding: 0 2vw;
+    padding-top: 10vh;
+}
+
+
+
+/* #page1 h1{
+    font-size: 10vw;
+    font-family: helvetica;
+    line-height: 10vw;
+    text-align: right; */
+    nav {
+        padding: 1vw 0vw;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 100;
+        justify-content: space-between;
+    }
+
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+#center{
+    height: 65vh;
+    width: 100%;
+  
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 2.5vw;
+}
+#left h3{
+    width: 25vw;
+    font-size: 1.8vw; 
+    line-height: 2vw;
+}
+
+#center h1 {
+    font-size: 7vw;
+    text-align: right;
+    line-height: 7vw;
+}
+
+/* .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    margin-top: -1.5vw;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    margin-top: .5 vw; */
+
+#hero-shape {
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    right: 0;
+    top: 65vh;
+}
+
+#hero-1 {
+    background-color: #3bd06d;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(10px);
+    position: absolute;
+}
+
+#hero-2 {
+    background: linear-gradient(#0cb963, #0a8330);
+
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(25px);
+}
+
+#hero-3 {
+    background: linear-gradient(#16b120, #4daf4d);
+    height: 30vw;
+    position: absolute;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(25px);
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(55%, -3%);
+    }
+
+    to {
+        transform: translate(0%, 10%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(5%, -5%);
+    }
+
+    to {
+        transform: translate(-20%, 30%);
+    }
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    margin-top: -1.5vw;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    margin-top: .5 vw;
+}
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+  
+    padding: 8vw 0;
+    position: relative;
+}
+
+#moving-text {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+.con {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-text h1 {
+    font-size: 9vw;
+    /* background-color: lightblue; */
+    display: inline-block;
+}
+
+#gola {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #ff3838;
+    margin: 1vw 2vw;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    margin-top: -1.5vw;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    margin-top: .5 vw;
+}  */
+
+/* #play{
+    padding: 3vw 2vw;
+    background-color:rgb(29, 6, 236);
+    color: #fff;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+    font-family: helvetica;
+    border-radius:50%;
+    z-index: 1;
+    opacity:1;
+    scale: 1;
+    transform: translate(-50%,-50%); */
+
+
+
+/* .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+} */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 800px; 
+}
+
+.row {
+    display: flex;
+}
+
+.hexagon {
+    width: 100px; /* Adjust size as needed */
+    height: 115.48px; /* Height calculated based on width for a regular hexagon */
+    background-color: #ffda20;
+    position: relative;
+    margin: 10px; /* Adjust margin to create spacing between hexagons */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: transform 0.5s ease;
+}
+
+.hexagon::before,
+.hexagon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    clip-path: inherit;
+    transition: inherit;
+}
+
+.hexagon::before {
+    transform: rotate(60deg);
+}
+
+.hexagon::after {
+    transform: rotate(-60deg);
+}
+
+.hexagon:hover {
+    transform: rotate(180deg);
+}
+
+#flower {
+    position: absolute;
+    width: 150px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    background-color: orange;
+    border-radius: 25px; /* Adjust border-radius to maintain petal shape */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.flower {
+    width: 150px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 25px; 
+    pointer-events: none;
+}
+
+.flower::before{
+    content: "";
+    display: block;
+    position:absolute;
+    width: 150px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 25px;
+    transform: rotate(60deg)
+}
+
+.flower::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height:50px;
+    background: orange;
+    border-radius: 25px;
+    transform: rotate(-60deg)
+}
+
+/* #page2-bottom {
+    height: 80vh;
+    width: 100%;
+  
+    padding: 4.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+    
+}
+
+#page2-bottom h1 {
+    font-size: 4vw;
+    width: 60%;
+    line-height: 4vw;
+   
+}
+
+#bottom-part2 {
+    width: 20%;
+   
+}
+
+#bottom-part2 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#bottom-part2 p {
+    font-weight: 200;
+    margin-top: 2vw;
+    font-size: 1vw;
+    text-align: right;
+    columns:100px;
+} */
+
+.column {
+    float: left;
+    width: 14.2%; /* Adjust the width as needed */
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.column h2 {
+    margin-top: 0;
+}
+
+#bottom-part2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#bottom-part2 .content {
+    padding: 10px 10;
+}
+.columns {
+    float: right;
+    width: 55%; /* Adjust the width as needed */
+    padding: 0 30px;
+    box-sizing: border-box;
+}
